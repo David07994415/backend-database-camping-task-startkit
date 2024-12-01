@@ -218,7 +218,7 @@ JOIN
 (SELECT user_id,Count(*) AS total FROM "COURSE_BOOKING"
 WHERE user_id = (SELECT id FROM "USER" WHERE name = '王小明') AND status ='上課中'
 GROUP BY user_id) AS CB 
-ON CP.user_id = CB.user_id
+ON CP.user_id = CB.user_id;
 
 
 -- ████████  █████   █     ███  
